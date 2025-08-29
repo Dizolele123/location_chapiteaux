@@ -113,7 +113,7 @@ button:hover {
 }
 
 /* Responsive mobile */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
     padding: 20px;
   }
@@ -121,9 +121,13 @@ button:hover {
   .container h1 {
     font-size: 22px;
   }
+  .input-group{
+    padding: 12px;
+  }
 
   button {
     font-size: 15px;
     padding: 12px;
   }
 }
+
