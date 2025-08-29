@@ -115,7 +115,7 @@ button:hover {
 /* Responsive mobile */
 @media (max-width: 600px) {
   .container {
-    padding: 20px;
+    padding: 15px;
   }
 
   .container h1 {
@@ -135,6 +135,7 @@ button:hover {
     padding: 12px;
   }
 }
+
 
 
 
