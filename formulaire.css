@@ -30,14 +30,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 15px;
 }
 
 /* Container principal */
 .container {
   background: #ffffffdd;
   color: #333;
-  padding: 30px;
+  padding: 25px 20px; /* équilibrage gauche/droite */
   border-radius: 20px;
   max-width: 500px;
   width: 100%;
@@ -66,26 +66,31 @@ body {
 
 .input-group {
   text-align: left;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px; /* évite que ça colle aux bords */
 }
 
 .input-group label {
   font-weight: 600;
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   display: block;
   color: #2C7744;
+  padding-left: 2px; /* léger espace équilibré */
 }
 
 .input-group input,
 .input-group select,
 .input-group textarea {
   width: 100%;
-  padding: 12px;
+  padding: 12px 14px;
   border: 1px solid #ccc;
   border-radius: 10px;
   font-size: 14px;
   outline: none;
   transition: 0.3s;
+  box-sizing: border-box; /* évite débordement */
 }
 
 .input-group input:focus,
@@ -106,6 +111,7 @@ button {
   cursor: pointer;
   transition: 0.3s;
   font-weight: bold;
+  width: 100%;
 }
 
 button:hover {
@@ -115,17 +121,15 @@ button:hover {
 /* Responsive mobile */
 @media (max-width: 600px) {
   .container {
-    padding: 20px;
+    padding: 20px 15px; /* réduit encore pour mobile */
   }
 
   .container h1 {
     font-size: 22px;
   }
-  .input-group{
-    padding: 12px;
-  }
-  label{
-    padding: 12px;
+
+  .input-group {
+    max-width: 100%; /* prend tout l’espace du conteneur */
   }
 
   button {
@@ -133,5 +137,7 @@ button:hover {
     padding: 12px;
   }
 }
+
+
 
 
