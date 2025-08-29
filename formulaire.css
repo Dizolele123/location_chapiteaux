@@ -37,7 +37,8 @@ body {
 .container {
   background: #ffffffdd;
   color: #333;
-  padding: 30px;
+  padding-right: 12px;
+  padding-left: 12px;
   border-radius: 20px;
   max-width: 500px;
   width: 100%;
@@ -122,12 +123,12 @@ button:hover {
     font-size: 22px;
   }
   .input-group{
-    padding-left:12px;
-    padding-right:12px;
+    marging-left:12px;
+    marging-right:12px;
   }
   label {
-    padding-left:12px;
-    padding-right:12px;
+    marging-left:12px;
+    marging-right:12px;
   }
 
   button {
@@ -135,6 +136,7 @@ button:hover {
     padding: 12px;
   }
 }
+
 
 
 
