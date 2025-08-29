@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location de Chapiteaux</title>
+  <link rel="stylesheet" href="formulaire.css">
+</head>
+  <div class="container">
+    <h1>Réservez Votre Chapiteau</h1>
+    <p class="subtitle">Facile, rapide et sécurisé</p>
+
+    <form class="form">
+      <div class="input-group">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+      </div>
+
+      <div class="input-group">
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="+242 06 xxx xx xx" required>
+      </div>
+
+      <div class="input-group">
+        <label for="date">Date de l'événement</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div class="input-group">
+        <label for="date">Nombre de Chapiteau</label>
+        <input type="quantity" id="quantite" name="quantite" required>
+      </div>
+
+      <div class="input-group">
+        <label for="taille">Type de manifestation</label>
+        <select id="taille" name="taille" required>
+          <option value="">-- Choisissez --</option>
+          <option value="Anniverssaire">Anniverssaire</option>
+          <option value="Mariage">Mariage</option>
+          <option value="Retrait de Deuil">Retrait de Deuil</option>
+          <option value="Veillée">Veillée</option>
+          <option value="Autres">Autre...</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="message">Détails supplémentaires</label>
+        <textarea id="message" name="message" rows="4" placeholder="Ajoutez des précisions..."></textarea>
+      </div>
+
+      <button type="submit">Réserver Maintenant</button>
+    </form>
+  </div>
+</body>
+</html>
+
